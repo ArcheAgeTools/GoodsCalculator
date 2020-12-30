@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Publish app
-        run: dotnet publish -c Release
+        run: dotnet publish GoodsCalculator/GoodsCalculator/GoodsCalculator.csproj -c Release
 
       - name: Rewrite base href
         uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
